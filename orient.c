@@ -94,7 +94,7 @@ int main(void)
 	    system("xrandr -o inverted");
 
 	    // disable the touchpad when inverted
-	    system("synclient TouchpadOff=0");
+	    system("synclient TouchpadOff=1");
 	}
         else if (axis_value_0 > 10000)
 	{
@@ -102,7 +102,7 @@ int main(void)
 	    system("xrandr -o right");
 
 	    // disable the touchpad
-	    system("synclient TouchpadOff=0");
+	    system("synclient TouchpadOff=1");
 	}
       	else if (axis_value_0 < -10000)
 	{
@@ -110,7 +110,7 @@ int main(void)
 	    system("xrandr -o left");
 
 	    // disable the touchpad
-	    system("synclient TouchpadOff=0");
+	    system("synclient TouchpadOff=1");
 	}
         else
 	{
@@ -118,11 +118,11 @@ int main(void)
 	    system("xrandr -o normal");
 
             // enable the touchpad when in normal mode
-	    system("synclient TouchpadOff=2");
+	    system("synclient TouchpadOff=0");
 	}
 
-        // 1 millisecond delay
-        usleep(1000);
+        // 50 millisecond delay
+        usleep(50000);
     }
 
     close(joy_fd);
