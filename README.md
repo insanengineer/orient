@@ -48,7 +48,7 @@ cp orient.desktop $HOME/.config/autostart/
 
 ````
 
-###Disabling Notifications
+###Disabling Auto Rotation
 To disable orient auto rotation run the commando below.
 ````bash
 gsettings set apps.orient enable-autorotate false
