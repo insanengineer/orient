@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="apps.orient" path="/apps/orient/">
+    <key type="b" name="enable-autorotate">
+      <default>true</default>
+      <summary>Enable Autorotate</summary>
+      <description>
+        Set this value to true to enable accelerometer based auto rotation.
+      </description>
+    </key>
+  </schema>
+</schemalist>

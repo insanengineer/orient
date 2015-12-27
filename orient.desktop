@@ -1,0 +1,6 @@
+	[Desktop Entry]
+	Name=Orient
+	Exec=/opt/orient/orient
+	Icon=/usr/share/icons/Adwaita/48x48/emblems/emblem-synchronizing.png
+	Type=Application
+	Categories=Utility;
